@@ -1,0 +1,27 @@
+.footer {
+  background-color: $grey-color;
+}
+
+.footer .content-wrapper {
+  @include displayFlex;
+
+  color: #828282;
+
+  a {
+    transition: $transition-time;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer .content-wrapper {
+    justify-content: center;
+
+    .copyright {
+      text-align: center;
+    }
+  }
+}

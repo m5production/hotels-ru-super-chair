@@ -1,0 +1,28 @@
+@import './user-contacts.scss';
+@import './advertisement.scss';
+
+.promo-block {
+  @include displayFlex;
+  align-items: stretch;
+
+}
+
+.block-item {
+  width: clamp(264px, calc(50% - $standard-gap), 455px);
+  padding: 2.5rem 2.8rem;
+  flex-grow: 1;
+
+  @include displayFlex;
+  flex-wrap: nowrap;
+
+  background-color: $green-color;
+
+  color: white;
+
+  .text{
+    @include displayFlex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+}

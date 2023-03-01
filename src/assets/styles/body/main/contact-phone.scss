@@ -1,0 +1,9 @@
+.contact-phone {
+  @include displayFlex;
+  flex-direction: column;
+
+  &-link {
+    font-size: 1.14rem;
+    line-height: 119%;
+  }
+}

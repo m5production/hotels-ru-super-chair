@@ -1,0 +1,71 @@
+.special-offers-container {
+  background-color: $grey-color;
+}
+
+.special-offers {
+  padding-top: 5.7rem;
+  padding-bottom: 7.14rem;
+}
+
+.special-offers .section-heading {
+  @include displayFlex;
+
+  margin-bottom: 2.7rem;
+
+  font-size: 1.7rem;
+
+  &::after {
+    content: "";
+
+    width: 188px;
+    height: 60px;
+
+    background-image: url("./assets/img/special-offers/decorative/truck.png");
+  }
+}
+
+.special-offers-list {
+  @include displayFlex;
+
+  &-item {
+    @include displayFlex;
+    flex-direction: column;
+
+    flex-basis: 255px;
+
+    padding: 25px 30px;
+
+    background-color: white;
+
+    &-text {
+      color: $dark-grey-color;
+      text-align: center;
+      line-height: 142%;
+    }
+
+    &-price {
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+
+    &-purchase-btn {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .special-offers.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section-heading,
+    .special-offers-list {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.areas-of-work-list {
+  max-width: 675px;
+  margin: 0 auto;
+  
+  @include displayFlex;
+
+  font-size: 1.14rem;
+  line-height: 119%;
+}
+
+@media (max-width: 650px) {
+  .areas-of-work-list {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,40 @@
+.user-contacts {
+  .user-mail-input {
+    padding: $standard-gap;
+    border: 1px solid transparent;
+
+    &:focus {
+      border-color: black;
+      outline: none;
+    }
+  }
+
+  .img-wrapper {
+    flex-basis: 140px;
+    width: 140px;
+    flex-shrink: 0;
+    height: 140px;
+    background-image: url("./assets/img/promo/envelope.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.user-mail-input {
+  width: 225px;
+  height: 35px;
+
+  background: #FFFFFF;
+  border-radius: 30px;
+}
+
+@media (max-width: 530px) {
+
+  .user-mail-input {
+    flex-shrink: 1;
+  }
+
+  .user-contacts {
+    flex-direction: column;
+  }
+}

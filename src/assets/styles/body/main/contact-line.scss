@@ -1,0 +1,17 @@
+.contact-line {
+  border-bottom: 1px solid $grey-color;
+  
+  .content-wrapper {
+    @include displayFlex;
+  }
+}
+
+.company-logo {
+  @include displayFlex;
+}
+
+@media (max-width: 500px) {
+  .contact-line .content-wrapper {
+    justify-content: center;
+  }
+}

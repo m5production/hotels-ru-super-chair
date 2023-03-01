@@ -1,0 +1,57 @@
+.contacts {
+  @include displayFlex;
+}
+
+.social-network {
+  @include displayFlex;
+
+  &-link {
+    display: block;
+
+    width: 45px;
+    height: 45px;
+
+    background-image: url("./assets/img/contacts/youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 2px solid $green-color;
+    border-radius: 50%;
+    transition: $transition-time;
+
+    &:hover {
+      background-color: $green-color;
+      background-image: url("./assets/img/contacts/youtube-hover.svg");
+    }
+
+    &.vk {
+      background-image: url("./assets/img/contacts/vk.svg");
+
+      &:hover {
+        background-image: url("./assets/img/contacts/vk-hover.svg");
+      }
+    }
+
+    &.facebook {
+      background-image: url("./assets/img/contacts/fb.svg");
+
+      &:hover {
+        background-image: url("./assets/img/contacts/fb-hover.svg");
+      }
+    }
+
+    &.instagram {
+      background-image: url("./assets/img/contacts/instagram.svg");
+    
+      &:hover {
+        background-image: url("./assets/img/contacts/instagram-hover.svg");
+      }
+    }
+  }
+}
+
+@media (max-width:750px) {
+  .contacts {
+    justify-content: center;
+  }
+}

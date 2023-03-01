@@ -1,0 +1,87 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: $green-color;
+  color: white;
+
+  .content-wrapper {
+    @include displayFlex;
+  }
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 3.42rem;
+  line-height: 123%;
+}
+
+.hero .text-wrapper {
+  max-width: 308px;
+
+  @include displayFlex;
+  gap: 3.57rem;
+
+  flex-direction: column;
+
+  .sale-details-btn {
+    position: relative;
+    z-index: 5;
+    border-color: white;
+  }
+}
+
+.img-group {
+  position: relative;
+  @include displayFlex;
+  justify-content: center;
+
+  width: max(270px, 50%);
+
+  img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+
+    width: 116%;
+    height: 116%;
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.4);
+
+    background-position: center;
+  }
+
+  &::after {
+    content: "";
+
+    width: 147%;
+    height: 147%;
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.3);
+
+    background-position: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero .content-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .main-heading {
+    font-size: 2.7rem;
+  }
+}

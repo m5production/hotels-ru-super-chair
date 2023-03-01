@@ -1,0 +1,14 @@
+$font-family: 'Roboto', sans-serif;
+$grey-color: #EFEFEF;
+$green-color: #66C05D;
+$dark-grey-color: #333333;
+$standard-gap: 1.42rem;
+$transition-time: 0.3s;
+
+@mixin displayFlex() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $standard-gap;
+  flex-wrap: wrap;
+}

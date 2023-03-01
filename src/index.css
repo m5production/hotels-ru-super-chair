@@ -1,0 +1,14 @@
+@import './assets/styles/normalize.css';
+@import './assets/styles/my-reset.css';
+@import './assets/fonts/fonts.css';
+@import './assets/styles/variables.scss';
+@import './assets/styles/common.scss';
+@import './assets/styles/body/main/contact-phone.scss';
+@import './assets/styles/body/header.scss';
+@import './assets/styles/body/main/contact-line.scss';
+@import './assets/styles/body/main/areas-of-work.scss';
+@import './assets/styles/body/main/hero.scss';
+@import './assets/styles/body/main/special-offers.scss';
+@import './assets/styles/body/main/promo-block/promo-block.scss';
+@import './assets/styles/body/main/contacts.scss';
+@import './assets/styles/body/footer.scss';

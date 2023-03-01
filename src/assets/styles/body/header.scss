@@ -1,0 +1,14 @@
+.header {
+  background-color: #EFEFEF;
+}
+
+.nav-list {
+  max-width: 447px;
+  @include displayFlex;
+}
+
+@media (max-width: 500px) {
+  .nav-list{
+    justify-content: center;
+  }
+}
